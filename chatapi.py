@@ -4,8 +4,7 @@ import json
 import os
 from dotenv import load_dotenv
 
-api = os.environ['API_KEY']
-openai.api_key = api
+openai.api_key = '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'
 
 
 
