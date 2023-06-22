@@ -23,6 +23,7 @@ from redis import Redis
 app = Flask(__name__, static_url_path='/static')
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///starwars.db'
+#postgres://stwars_user:BtgzsFbDKHxghe2zu2tvMuS4CZAzeudP@dpg-ci9t2vmnqql8alg5rssg-a.frankfurt-postgres.render.com/stwars
 app.config['SECRET_KEY'] = 'highlysecuredhashkey'
 db = SQLAlchemy(app)
 
