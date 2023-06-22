@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Rubik:wght@300&display=swap');
+
+body {
+  background: url('/static/background2.mp4') no-repeat center;
+  background-size: cover;
+  animation: loopVideo 10s infinite;
+  background-color: #000; /* Replace with the desired background color */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 390px;
+}
+
+.form-value {
+  text-align: center;
+}
+
+.form-value h2 {
+  margin-bottom: 6px;
+  color: #ffe81f;
+}
+
+#reg {
+  font-size: 22px;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  color: #fff;
+  border-bottom: 1.5px solid #ccc;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ffe81f;
+}
+
+.input-field:hover {
+      border-color: #ffe81f;
+
+
+}
+
+.submit-btn {
+  background-color: #ffe81f;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: -3px;
+}
+
+.submit-btn2 {
+  background-color: #ffe81f;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.register-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+.submit-btn,
+.submit-btn2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit-btn:hover,
+.submit-btn2:hover {
+    transform: scale(1.05);
+    background-color: #ffe02f;
+
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+
+.flash-messages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flash-messages li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.info {
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.warning {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.flash-message {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}

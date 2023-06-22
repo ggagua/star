@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <p class="troop1">Trooper Report:</p>
+    <p class="troop2">This is not the page you are looking for ..</p>
+    <p class ="troop3" >Move along..</p>
+    <img src="{{ url_for('static', filename='trooper1.png') }}" id="t1">
+    <img src="{{ url_for('static', filename='trooper2 1.png') }}" id="t2">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+
+    {% endblock %}

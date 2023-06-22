@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/next.css') }}">
+
+
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image loaded" alt="Image" src="https://images.hdqwalls.com/download/darth-vader-rogue-one-star-wars-4k-de-1280x1024.jpg" draggable="false"  >
+        <img class="image loaded" alt="Image" src="https://wallpaper.dog/large/5571416.jpg" draggable="false" >
+        <img class="image loaded" alt="Image" src="https://w0.peakpx.com/wallpaper/320/372/HD-wallpaper-r2-d2-star-star-wars-wars.jpg" draggable="false">
+        <img class="image loaded" alt="Image" src="https://compote.slate.com/images/2b6fb34a-8047-4e17-b3d5-64987519657d.jpg" draggable="false" >
+        <img class="image loaded" alt="Image" src="https://www.sideshow.com/cdn-cgi/image/quality=90,f=auto/https://www.sideshow.com/storage/product-images/200612/yoda_star-wars_gallery_646559c3ddb84.jpg" draggable="false">
+        <img class="image loaded" alt="Image" src="https://lumiere-a.akamaihd.net/v1/images/62bf0e03e8459d0001f4881b-image_71900d89.jpeg?region=192%2C0%2C1152%2C864" draggable="false" >
+        <img class="image loaded" alt="Image" src="https://www.komar.de/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/D/X/DX4-041_1570026661_3.jpg" draggable="false" >
+        <img class="image loaded" alt="Image" src="https://lumiere-a.akamaihd.net/v1/images/5e94826f7d7499000120d564-image_f9b9d30e.jpeg?region=0%2C48%2C1536%2C768" draggable="false" >
+        <img class="image loaded" alt="Image" src="https://upload.wikimedia.org/wikipedia/en/8/8f/Emperor_RotJ.png" draggable="false">
+        <a href="{{url_for('login')}}" class="signin">see more</a>
+    </div>
+        <script src="{{ url_for('static', filename='js/movement.js') }}"></script>
+
+    {% endblock %}
+
+

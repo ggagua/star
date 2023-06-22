@@ -1,0 +1,162 @@
+ {% extends 'base.html' %}
+
+
+
+  {% block content %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chat.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+     <div class="chat-container">
+      <div class="card flex-grow-1">
+    <div class="card-header bg-primary text-white">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-brands fa-jedi-order"></i>
+        </div>
+        <div class="navbar-links">
+          <a href="{{url_for('dashboard', index=0)}}" class="nav-link">DASHBOARD</a>
+          <a href="{{url_for('logout')}}" class="nav-link">LOG OUT</a>
+        </div>
+      </div>
+    </div>
+      <div class="card-body messages-box">
+
+      <ul class="list-unstyled messages-list">
+
+        <li class="message received">
+          <div class="message-text">
+            <div class="message-sender">
+              <b>SWBot</b>
+            </div>
+            <div class="message-content">
+              Hi, I am Star Wars chatbot, please ask me Star Wars related questions, or anything you want!
+            </div>
+          </div>
+        </li>
+
+          {% for chat in chats%}
+                    <li class="message sent">
+          <div class="message-text">
+            <div class="message-sender">
+              <b>You</b>
+            </div>
+            <div class="message-content">
+                {{chat.user_input}}
+            </div>
+          </div>
+        </li>
+
+                  <li class="message received">
+          <div class="message-text">
+            <div class="message-sender">
+              <b>SWBot</b>
+            </div>
+            <div class="message-content">
+                {{chat.chatgpt_response}}
+            </div>
+          </div>
+        </li>
+          {% endfor %}
+      </ul>
+
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+  </div>
+  <form class="message-form">
+    <div class="input-group">
+      <input type="text" class="form-control message-input" placeholder="Type your message...">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary btn-send">Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+ <script>
+      const messagesList = document.querySelector('.messages-list');
+  const messageForm = document.querySelector('.message-form');
+  const messageInput = document.querySelector('.message-input');
+
+  messageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const message = messageInput.value.trim();
+    if (message.length === 0) {
+      return;
+    }
+
+    const messageItem = document.createElement('li');
+    messageItem.classList.add('message', 'sent');
+    messageItem.innerHTML = `
+        <div class="message-text">
+            <div class="message-sender">
+                <b>You</b>
+            </div>
+            <div class="message-content">
+                ${message}
+            </div>
+        </div>`;
+    messagesList.appendChild(messageItem);
+
+    messageInput.value = '';
+
+    fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'message': message
+      })
+            })
+      .then(response => response.json())
+      .then(data => {
+        const response = data.response;
+        const messageItem = document.createElement('li');
+        messageItem.classList.add('message', 'received');
+        messageItem.innerHTML = `
+        <div class="message-text">
+            <div class="message-sender">
+              <b>SWBot</b>
+            </div>
+            <div class="message-content">
+                ${response}
+            </div>
+        </div>
+          `;
+        messagesList.appendChild(messageItem);
+      });
+  });
+
+ </script>
+
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

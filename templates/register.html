@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <section>
+        <div class="form-box">
+     <div class= 'form-value'>
+     <h2 id="reg">Register your account!</h2>
+     {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for message in messages %}
+            <li class="flash-message">{{ message }}</li>
+          {% endfor %}
+        </ul>
+         {% endif %}
+    {% endwith %}
+      <form method = "POST" action="">
+        {{ form.hidden_tag()}}
+        {{ form.username(class_="input-field") }}
+        {{ form.password(class_="input-field") }}
+        {{ form.submit(class_="submit-btn2") }}
+    </form>
+     </div>
+            <a href="{{url_for('login')}}" class = "register-link" style="color: #ffe81f">Already have an account? Log In!</a>
+
+        </div>
+    </section>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loginpage.css') }}">
+
+{% endblock %}

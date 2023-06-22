@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Rubik:wght@300&display=swap');
+body {
+  background: url('/static/background2.mp4') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.flash-messages {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  color: yellow;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  animation: fade-in 2s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flash-messages li {
+  margin-bottom: 10px;
+  margin-left: 1px
+}
+
+.flash-messages:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+    color: yellow;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+

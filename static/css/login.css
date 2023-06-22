@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.translate {
+    position: absolute;
+    width: 904px;
+    height: 204px;
+    left: 542px;
+    top: 278px;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: condensed;
+    font-size: 27px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+
+    color: #CCAA55;
+}
+
+.errmes {
+    position: absolute;
+    width: 904px;
+    height: 204px;
+    left: 542px;
+    top: 278px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    color: #222222;
+
+
+    }
+.errmes2 {
+    position: absolute;
+    width: 904px;
+    height: 204px;
+    left: 542px;
+    top: 313px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    color: #222222;
+}
+
+.errmes3 {
+    position: absolute;
+    width: 904px;
+    height: 204px;
+    left: 542px;
+    top: 347px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    color: #222222;
+}
+
+.troop1 {
+    position: absolute;
+    width: 659px;
+    height: 151px;
+    left: 461px;
+    top: 233px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    color: #999999;
+}
+
+.troop2 {
+    position: absolute;
+width: 659px;
+height: 151px;
+left: 461px;
+top: 253px;
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 52px;
+letter-spacing: -0.02em;
+
+color: #222222;
+}
+
+.troop3 {
+    position: absolute;
+width: 659px;
+height: 151px;
+left: 466px;
+top: 289px;
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 52px;
+letter-spacing: -0.02em;
+
+color: #222222;
+
+}
+
+#t1 {
+
+    position: absolute;
+width: 124px;
+height: 406px;
+left: 253px;
+top: 238px;
+}
+
+
+#t2 {
+    position: absolute;
+    width: 161px;
+    height: 409px;
+    left: 1186px;
+    top: 235px;
+}
+#c3 {
+    position: absolute;
+    width: 225px;
+    height: 385px;
+    left: 154px;
+    top: 121px;
+
+}
+
+#r2 {
+    position: absolute;
+    width: 167px;
+    height: 236px;
+    left: 309px;
+    top: 270px;
+    box-shadow: black;
+
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        height: auto;
+    }
+}
+

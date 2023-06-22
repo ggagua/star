@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <p class="translate">C3PO Translates:</p>
+    <p class="errmes">I am sorry sir, but R2 says something</p>
+    <p class="errmes2">is not right here. I guess we should go back</p>
+    <p class ="errmes3" > the way we came. Or maybe ask locals for directions?  </p>
+    <img src="{{ url_for('static', filename='c3po 1.png') }}" id="c3">
+    <img src="{{ url_for('static', filename='r2d2 1.png') }}" id="r2">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+
+    {% endblock %}

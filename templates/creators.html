@@ -1,0 +1,16 @@
+  {% extends 'base.html' %}
+
+  {% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/limit.css') }}">
+
+    <ul class="flash-messages">
+        <a class="click" href="{{url_for('dashboard')}}">
+          <li class="{{ message_category }}">Giorgi Gagua</li>
+          <li class="{{ message_category }}">Nika Gogishvili</li>
+        </a>
+
+    </ul>
+
+
+
+  {% endblock %}
