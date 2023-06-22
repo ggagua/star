@@ -98,7 +98,7 @@ class LoginForm(FlaskForm):
 
     submit = SubmitField('Login')
 
-limiter = Limiter(get_remote_address, app=app, storage_uri='redis://localhost:6379')
+limiter = Limiter(get_remote_address, app=app)
 
 @app.route('/')
 def home():
