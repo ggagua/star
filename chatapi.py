@@ -13,17 +13,21 @@ cursor = conn.cursor()
 cursor.execute("SELECT * FROM swlist")
 
 rows = cursor.fetchall()
-series_dict = {}
-namelist = []
 def get_sw_series(year):
+    namelist = []  # Clear the namelist for each call
+
     for row in rows:
         if year == row[2]:
             namelist.append(row[1])
-            series_dict['year'] = year
-            series_dict['name'] = namelist
 
+    series_dict = {
+        'year': year,
+        'name': namelist
+    }
 
     return json.dumps(series_dict)
+
+
 
 
 
@@ -43,7 +47,8 @@ def chat_with_gpt(user_message):
                     "properties": {
                     "year": {
                         "type" : "string",
-                        "description" : "Date of year, e.g 2021, 2022, it could also be TBC. TBC indicates the movies that are planned in future but are not given exact date yet"
+                        "description" : "Date of year, e.g 2021, 2022, it could also be TBC. TBC indicates the movies that are planned in future but are not given exact date yet."
+
                     },
                 },
                     "required": ["year"]
@@ -72,4 +77,13 @@ def chat_with_gpt(user_message):
         )
         return second_response.choices[0].message.content.strip()
     return response.choices[0].message.content.strip()
+
+
+
+
+
+
+
+
+
 

@@ -23,9 +23,14 @@ from redis import Redis
 app = Flask(__name__, static_url_path='/static')
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///starwars.db'
-#postgres://stwars_user:BtgzsFbDKHxghe2zu2tvMuS4CZAzeudP@dpg-ci9t2vmnqql8alg5rssg-a.frankfurt-postgres.render.com/stwars
 app.config['SECRET_KEY'] = 'highlysecuredhashkey'
 db = SQLAlchemy(app)
+
+
+#heroku login
+#heroku ps:scale web=1
+#https://stwars-flask-cc5078b64c22.herokuapp.com/
+
 
 
 #აკავშირების ფლასკს და ჩვენს ლოგინ სისტემას
@@ -34,7 +39,7 @@ login_manager.init_app(app)
 login_manager.login_view = "login"
 load_dotenv()
 
-redis = Redis(host='localhost', port=6379)
+# redis = Redis(host='localhost', port=6379)
 
 
 
@@ -205,5 +210,5 @@ def handle_index_error(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
 

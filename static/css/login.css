@@ -161,7 +161,7 @@ top: 238px;
     box-shadow: black;
 
 }
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
     .login-box {
         width: 90%;

@@ -15,7 +15,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  background-color: #000;
+  background-color: black;
 }
 
 * {
@@ -394,7 +394,6 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   }
 }
 
-/* -- YT link / Source link styles -- */
 
 main > article > .article-description-section > p  > .source-link {
   color: var(--highlight-color);

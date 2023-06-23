@@ -11,7 +11,7 @@ body, html {
     height: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    overflow-y: hidden  ;
+    overflow-y: auto  ;
     overflow-x: hidden;
   }
 
