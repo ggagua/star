@@ -36,5 +36,3 @@ for dictionary in json_data_list:
     }
 
     character[name] = inner_dict
-
-

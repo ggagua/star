@@ -15,7 +15,6 @@ import sqlite3
 from flask import jsonify
 import os
 from dotenv import load_dotenv
-from redis import Redis
 
 
 
@@ -27,19 +26,15 @@ app.config['SECRET_KEY'] = 'highlysecuredhashkey'
 db = SQLAlchemy(app)
 
 
-#heroku login
-#heroku ps:scale web=1
-#https://stwars-flask-cc5078b64c22.herokuapp.com/
 
 
 
-#აკავშირების ფლასკს და ჩვენს ლოგინ სისტემას
+
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 load_dotenv()
 
-# redis = Redis(host='localhost', port=6379)
 
 
 
@@ -135,7 +130,6 @@ def login():
 @app.route('/register', methods = ['GET', 'POST'])
 def register():
     form = RegisterForm()
-
     if form.validate_on_submit():
         if form.validate_username(form.username):
             pass
