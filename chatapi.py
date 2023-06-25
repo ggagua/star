@@ -15,7 +15,7 @@ cursor.execute("SELECT * FROM swlist")
 
 rows = cursor.fetchall()
 def get_sw_series(year):
-    namelist = []  # Clear the namelist for each call
+    namelist = []
 
     for row in rows:
         if year == row[2]:
