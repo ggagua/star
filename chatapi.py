@@ -32,6 +32,8 @@ def get_sw_series(year):
 
 
 
+
+
 def chat_with_gpt(user_message):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-0613",
@@ -42,13 +44,14 @@ def chat_with_gpt(user_message):
         functions=[
             {
                 "name": 'get_sw_series',
-                "description": "Gets information about which star wars was released on which year",
+                "description": "Gets information about which star wars movie/series is set to be released on which year, year should be greater than 2021, as u have access to the data before it",
                 "parameters": {
                     "type": "object",
                     "properties": {
                     "year": {
                         "type" : "string",
                         "description" : "Date of year, e.g 2021, 2022, it could also be TBC. TBC indicates the movies that are planned in future but are not given exact date yet."
+                                        "Once again, year should be greater than 2021"
 
                     },
                 },
@@ -74,12 +77,9 @@ def chat_with_gpt(user_message):
                  "name": function_name,
                  "content": function_response}
             ],
-
         )
         return second_response.choices[0].message.content.strip()
     return response.choices[0].message.content.strip()
-
-
 
 
 

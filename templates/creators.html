@@ -3,10 +3,17 @@
   {% block content %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/limit.css') }}">
 
+          <div class="video-container">
+        <video autoplay loop muted poster="/static/poster.jpg">
+            <source src="/static/background2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <ul class="flash-messages">
         <a class="click" href="{{url_for('dashboard')}}">
           <li class="{{ message_category }}">Giorgi Gagua</li>
-          <li class="{{ message_category }}">Nika Gogishvili</li>
+          <li class="{{ message_category }}"></li>
         </a>
 
     </ul>

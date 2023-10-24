@@ -4,6 +4,13 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dash.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+      <div class="video-container">
+        <video autoplay loop muted poster="/static/poster.jpg">
+            <source src="/static/background2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
   <nav data-toggled="false" data-transitionable="false">
     <div id="nav-logo-section" class="nav-section">
         <a href="{{url_for('dashboard', index=0)}}">
@@ -16,7 +23,7 @@
         <a href="{{url_for('chat')}}">CHAT</a>
       </div>
       <div id="nav-social-section" class="nav-section">
-        <a href="{{url_for('creators')}}">CREATORS</a>
+        <a href="{{url_for('creators')}}">CREATOR</a>
       </div>
       <div id="nav-logout-section" class="nav-section">
         <a href="{{url_for('logout')}}">LOG OUT</a>
