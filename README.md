@@ -16,23 +16,23 @@ Welcome to my Star Wars Enthusiast Website, a project that combines Flask, Pytho
 ## Features
 
 ### Responsive Navigation
-Our website offers an immersive horizontal scrollable navigation bar that dynamically responds to mouse input, providing an engaging user experience.
+Website offers an immersive horizontal scrollable navigation bar that dynamically responds to mouse input, providing an engaging user experience.
 
 ![Responsive Navigation](https://github.com/ggagua/star/assets/117936056/413e2c6b-2de1-4653-9258-bb2247a45140)
 
 ## Login Page
 
 ### Secure Authentication
-The login page is meticulously designed using Flask's login system, incorporating modules like Flask-Login and WTForms. User passwords are securely encrypted using bcrypt, ensuring their confidentiality. We're utilizing SQLAlchemy and SQLite for the current project.
+The login page is meticulously designed using Flask's login system, incorporating modules like Flask-Login and WTForms. User passwords are securely encrypted using bcrypt, ensuring their confidentiality. I'm utilizing SQLAlchemy and SQLite for the current project.
 
 ![Secure Authentication](https://github.com/ggagua/star/assets/117936056/b7fa9cbf-5581-488b-bc6e-5a287691d4b2)
 
 ## Rate Limiting
 
 ### Jedi-Like Resilience
-To maintain a high level of security, we've implemented a sophisticated rate limiting mechanism. It temporarily restricts access to the login page if users exceed the maximum threshold, much like the Jedi's resilience guiding users back to the path of exploration.
+To maintain a high level of security, I've implemented a sophisticated rate limiting mechanism. It temporarily restricts access to the login page if users exceed the maximum threshold, much like the Jedi's resilience guiding users back to the path of exploration.
 
-![Rate Limiting](https://github.com/ggagua/star/assets/117936056/your-image-url-here)
+![Rate Limiting](https://github.com/ggagua/star/assets/117936056/b7fa9cbf-5581-488b-bc6e-5a287691d4b2")
 
 ## Data Exploration
 
@@ -44,23 +44,21 @@ Within the Star Wars-themed grid layout, users can delve into a treasure trove o
 ## Error Handling
 
 ### Graceful Handling
-Our code expertly handles errors, and logic is implemented to avoid out-of-bound and dictionary errors. Also, we've made custom-made error screens, which occur if a user tries to manually change something in the link section. In the given example, we can see that the user tried to manipulate the dashboard and instead of indexes, they wrote a completely different word. We've made two different versions of the error screen to make it less repetitive.
+Code expertly handles errors, logic is implemented to avoid out of bound and lot of dictionary errors. Also, I've made custom made error screen, which occurs if user tries to manually change something in link-section. In given example, we can see that user tried to manipulate dashboard and instead of indexes, he wrote completely different word. I've made 2 different versions of error screen, to make it less repetitive.
 
-![Error Handling](https://github.com/ggagua/star/assets/117936056/your-image-url-here)
+![Error Handling](https://github.com/ggagua/star/assets/117936056/your-image-url-here](https://github.com/ggagua/star/assets/117936056/0f0c34e3-efa6-4511-a5ec-04ffa6d97eb2))
 
-## API Integration
-
-### Hidden Knowledge Unveiled
-Our project expertly extracts data from various APIs, unveiling hidden knowledge locked within JSON. These sacred texts reveal numerous dictionaries, each holding a piece of the Star Wars puzzle. With meticulous logic, we traverse these celestial archives, extracting vital information and presenting it in a format that would make even Master Yoda nod in approval.
-
-![API Integration](https://github.com/ggagua/star/assets/117936056/your-image-url-here)
 
 ## ChatGPT Integration
 
 ### Unleash the Force of Knowledge
-Discover the Star Wars magic on our website! Powered by ChatGPT 3.5 Turbo API, we bring you up-to-date information through function-calling. Our database holds the secrets of Star Wars series, ensuring accurate and personalized responses.
+Discover the Star Wars magic on our website! Powered by ChatGPT 3.5 Turbo API, I bring you up-to-date information through function-calling.Newly introduced function-calling has been utilized in the project, to not dive in source code too much, I'll showcase comparision of original and modified chat-bot. To explain the logic, based on prompt, ChatGPT understands when the function needs to be triggered and then accesses 
+my SQLite DB which has information about upcoming Star Wars series/films. More about code in - chatapi.py
 
-![ChatGPT Integration](https://github.com/ggagua/star/assets/117936056/your-image-url-here)
+![ChatGPT Integration]<img width="873" alt="image" src="https://github.com/ggagua/star/assets/117936056/05a28af7-46c5-491f-9af2-1816376d58d7">
+<img width="1495" alt="image" src="https://github.com/ggagua/star/assets/117936056/d68a0687-822e-4023-9a5b-e29c9f22a9e3">
+Here is the SQLite base:
+<img width="752" alt="image" src="https://github.com/ggagua/star/assets/117936056/9cdfe5ac-9f49-4189-997a-d8adf5c34fd6">
 
 ## Getting Started
 
