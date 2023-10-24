@@ -12,6 +12,8 @@ Welcome to my Star Wars Enthusiast Website, a project that combines Flask, Pytho
 - [Error Handling](#error-handling)
 - [API Integration](#api-integration)
 - [ChatGPT Integration](#chatgpt-integration)
+- [How to install?](#getting-started)
+- [Issues](#found-an-issue?)
 
 ## Features
 
@@ -25,7 +27,6 @@ Website offers an immersive horizontal scrollable navigation bar that dynamicall
 ### Secure Authentication
 The login page is meticulously designed using Flask's login system, incorporating modules like Flask-Login and WTForms. User passwords are securely encrypted using bcrypt, ensuring their confidentiality. I'm utilizing SQLAlchemy and SQLite for the current project.
 
-![Secure Authentication](https://github.com/ggagua/star/assets/117936056/b7fa9cbf-5581-488b-bc6e-5a287691d4b2)
 
 ## Rate Limiting
 
@@ -60,10 +61,6 @@ my SQLite DB which has information about upcoming Star Wars series/films. More a
 Here is the SQLite base:
 <img width="752" alt="image" src="https://github.com/ggagua/star/assets/117936056/9cdfe5ac-9f49-4189-997a-d8adf5c34fd6">
 
-## Getting Started
-
-To get a copy of this project and run it locally, follow these steps:
-
 
 Rest is up to you to explore, but how do you access the project?
 ## Getting Started
@@ -84,5 +81,25 @@ To get a copy of this project and run it locally, follow these steps:
 
    ```sh
    git clone https://github.com/ggagua/star.git
+
+
+## Found an Issue?
+
+I strive to make our Star Wars Enthusiast Website as flawless as a lightsaber. If you encounter any issues, bugs, or have suggestions for improvement, I welcome your feedback. Here's how you can help:
+
+1. **Check Existing Issues**: Before reporting a new issue, please check our [GitHub Issues](https://github.com/ggagua/star/issues) to see if someone else has already reported the same problem or if there's an ongoing discussion about it.
+
+2. **Create a New Issue**: If you can't find an existing issue that matches your problem or suggestion, feel free to [create a new issue](https://github.com/ggagua/star/issues/new). Be as detailed as possible, including the steps to reproduce the issue, the expected behavior, and the actual behavior you observed.
+
+3. **Include Screenshots**: If the issue is visual or related to the user interface, it's often helpful to include screenshots. You can upload them directly to the issue you create.
+
+4. **Provide Context**: Describe the environment in which you encountered the issue, such as your operating system, browser, or any relevant software versions.
+
+5. **Be Courteous**: We're all part of the Star Wars community, so please be respectful in your communications.
+
+6. **Contribute to Solutions**: If you're technically inclined and want to contribute to resolving the issue, consider submitting a pull request. I am always open to collaboration from the community. 
+
+I have uploaded PDF for all the sources I've used, feel free to check it out. May the Force be with you!
+
    
 
