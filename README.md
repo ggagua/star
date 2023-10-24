@@ -13,7 +13,7 @@ Welcome to my Star Wars Enthusiast Website, a project that combines Flask, Pytho
 - [API Integration](#api-integration)
 - [ChatGPT Integration](#chatgpt-integration)
 - [How to install?](#getting-started)
-- [Issues](#found-an-issue?)
+- [Issues](#issues)
 
 ## Features
 
@@ -83,7 +83,7 @@ To get a copy of this project and run it locally, follow these steps:
    git clone https://github.com/ggagua/star.git
 
 
-## Found an Issue?
+## Issues
 
 I strive to make our Star Wars Enthusiast Website as flawless as a lightsaber. If you encounter any issues, bugs, or have suggestions for improvement, I welcome your feedback. Here's how you can help:
 
