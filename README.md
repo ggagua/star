@@ -6,14 +6,14 @@ Welcome to my Star Wars Enthusiast Website, a project that combines Flask, Pytho
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Login Page](#login-page)
-- [Database Security](#database-security)
 - [Rate Limiting](#rate-limiting)
 - [Data Exploration](#data-exploration)
 - [Error Handling](#error-handling)
-- [API Integration](#api-integration)
 - [ChatGPT Integration](#chatgpt-integration)
 - [How to install?](#getting-started)
 - [Issues](#issues)
+- [Donation](#donation)
+- [Inspiration](#attribution-and-acknowledgments)
 
 ## Features
 
@@ -26,6 +26,7 @@ Website offers an immersive horizontal scrollable navigation bar that dynamicall
 
 ### Secure Authentication
 The login page is meticulously designed using Flask's login system, incorporating modules like Flask-Login and WTForms. User passwords are securely encrypted using bcrypt, ensuring their confidentiality. I'm utilizing SQLAlchemy and SQLite for the current project.
+<img width="1512" alt="image" src="https://github.com/ggagua/star/assets/117936056/298ee4be-8556-4397-bb42-e6653818783b">
 
 
 ## Rate Limiting
@@ -56,10 +57,11 @@ Code expertly handles errors, logic is implemented to avoid out of bound and lot
 Discover the Star Wars magic on our website! Powered by ChatGPT 3.5 Turbo API, I bring you up-to-date information through function-calling.Newly introduced function-calling has been utilized in the project, to not dive in source code too much, I'll showcase comparision of original and modified chat-bot. To explain the logic, based on prompt, ChatGPT understands when the function needs to be triggered and then accesses 
 my SQLite DB which has information about upcoming Star Wars series/films. More about code in - chatapi.py
 
-![ChatGPT Integration]<img width="873" alt="image" src="https://github.com/ggagua/star/assets/117936056/05a28af7-46c5-491f-9af2-1816376d58d7">
+<img width="873" alt="image" src="https://github.com/ggagua/star/assets/117936056/05a28af7-46c5-491f-9af2-1816376d58d7">
 <img width="1495" alt="image" src="https://github.com/ggagua/star/assets/117936056/d68a0687-822e-4023-9a5b-e29c9f22a9e3">
-Here is the SQLite base:
 <img width="752" alt="image" src="https://github.com/ggagua/star/assets/117936056/9cdfe5ac-9f49-4189-997a-d8adf5c34fd6">
+
+SQLite DB⬆️
 
 
 Rest is up to you to explore, but how do you access the project?
@@ -81,7 +83,11 @@ To get a copy of this project and run it locally, follow these steps:
 
    ```sh
    git clone https://github.com/ggagua/star.git
-
+4. Install required modules (Flask, SQLAlchemy, etc.)
+5. Run app.py
+6. In your web-browser access your localhost (127.0.0.1:5000).
+7. If your localhost is taken by another project or service, you can modify last line of the project and add
+   port = 8000. Ex : app.run(debug=True, port = 8000)
 
 ## Issues
 
@@ -95,11 +101,27 @@ I strive to make our Star Wars Enthusiast Website as flawless as a lightsaber. I
 
 4. **Provide Context**: Describe the environment in which you encountered the issue, such as your operating system, browser, or any relevant software versions.
 
-5. **Be Courteous**: We're all part of the Star Wars community, so please be respectful in your communications.
+5. **Contribute to Solutions**: If you're technically inclined and want to contribute to resolving the issue, consider submitting a pull request. I am always open to collaboration from the community. 
 
-6. **Contribute to Solutions**: If you're technically inclined and want to contribute to resolving the issue, consider submitting a pull request. I am always open to collaboration from the community. 
 
-I have uploaded PDF for all the sources I've used, feel free to check it out. May the Force be with you!
+## Donation
+
+If you've found my Star Wars Website valuable and want to support its continued development and maintenance, you can make a donation. 
+
+- [Support me on Buy Me a Coffee](https://www.buymeacoffee.com/ggagua)
+  
+
+## Attribution and Acknowledgments
+
+I believe in transparency, and as a token of my commitment, I have uploaded a PDF that lists all the sources  I've used in the development of this project. Feel free to check it out.
+
+- [Download PDF - Sources and Acknowledgments](https://github.com/ggagua/star/files/13142988/swars-ggagua.pdf)
+
+For inquiries or collaboration opportunities, feel free to contact me at [ggagua.tech@gmail.com](mailto:ggagua.tech@gmail.com).
+
+
+**May the Force be with you!**
+
 
    
 
