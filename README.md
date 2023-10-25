@@ -1,4 +1,4 @@
-# Star Wars Enthusiast Website
+# Star Wars Website
 
 Welcome to my Star Wars Enthusiast Website, a project that combines Flask, Python, HTML, CSS, and minimal JavaScript to create an immersive experience for Star Wars fans. 
 
