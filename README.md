@@ -54,7 +54,7 @@ Code expertly handles errors, logic is implemented to avoid out of bound and lot
 ## ChatGPT Integration
 
 ### Unleash the Force of Knowledge
-Discover the Star Wars magic on our website! Powered by ChatGPT 3.5 Turbo API, I bring you up-to-date information through function-calling.Newly introduced function-calling has been utilized in the project, to not dive in source code too much, I'll showcase comparision of original and modified chat-bot. To explain the logic, based on prompt, ChatGPT understands when the function needs to be triggered and then accesses 
+Powered by ChatGPT 3.5 Turbo API, I bring you up-to-date information through function-calling.Newly introduced function-calling has been utilized in the project, to not dive in source code too much, I'll showcase comparision of original and modified chat-bot. To explain the logic, based on prompt, ChatGPT understands when the function needs to be triggered and then accesses 
 my SQLite DB which has information about upcoming Star Wars series/films. More about code in - chatapi.py
 
 <img width="873" alt="image" src="https://github.com/ggagua/star/assets/117936056/05a28af7-46c5-491f-9af2-1816376d58d7">
@@ -83,7 +83,7 @@ To get a copy of this project and run it locally, follow these steps:
 
    ```sh
    git clone https://github.com/ggagua/star.git
-4. Install required modules (Flask, SQLAlchemy, etc.)
+4. Install required modules (Flask, SQLAlchemy, etc.), pip install -r requirements.txt
 5. Run app.py
 6. In your web-browser access your localhost (127.0.0.1:5000).
 7. If your localhost is taken by another project or service, you can modify last line of the project and add
